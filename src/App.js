@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Box from "./components/Box";
+import GridBox from "./components/GridBox";
+import Heading from "./components/Heading";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full max-w-[1440px] mx-auto">
+      <Heading>8 LÝ DO ĐỂ CHỌN</Heading>
+      <GridBox>
+        {Array(8)
+          .fill(0)
+          .map((item) => (
+            <Box
+              content="Nhà huấn luyện ActionCOACH giúp bạn xây dựng kế hoạch dài hạn giúp
+              doanh nghiệp bạn trở nên đồng bộ và sinh lời hiệu quả hơn."
+            ></Box>
+          ))}
+      </GridBox>
     </div>
   );
 }
