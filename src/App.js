@@ -4,7 +4,7 @@ import Heading from "./components/Heading";
 
 function App() {
   return (
-    <div className="w-full max-w-[1440px] mx-auto">
+    <div className="w-full max-w-[1440px] mx-auto p-4">
       <Heading>8 LÝ DO ĐỂ CHỌN</Heading>
       <GridBox>
         {Array(8)
